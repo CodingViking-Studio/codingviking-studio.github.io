@@ -589,6 +589,14 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.to-orange {
+  --tw-gradient-to: #ff5520 var(--tw-gradient-to-position);
+}
+
+.to-yellow {
+  --tw-gradient-to: #ffc82c var(--tw-gradient-to-position);
+}
+
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
