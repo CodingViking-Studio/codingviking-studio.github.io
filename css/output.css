@@ -558,6 +558,14 @@ video {
   display: flex;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .place-items-center {
   place-items: center;
 }
@@ -579,6 +587,11 @@ video {
   --tw-gradient-from: #ff5520 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 85 32 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 
 .text-3xl {
