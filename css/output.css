@@ -571,6 +571,10 @@ video {
   width: 100%;
 }
 
+.content-center {
+  align-content: center;
+}
+
 .justify-center {
   justify-content: center;
 }
