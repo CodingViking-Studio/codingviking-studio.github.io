@@ -606,3 +606,7 @@ video {
 .font-bold {
   font-weight: 700;
 }
+
+.text-opacity-0 {
+  --tw-text-opacity: 0;
+}
