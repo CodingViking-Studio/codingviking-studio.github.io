@@ -596,6 +596,10 @@ video {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
+.bg-gradient-to-t {
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
 .from-orange {
   --tw-gradient-from: #ff5520 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 85 32 / 0) var(--tw-gradient-to-position);
