@@ -558,21 +558,55 @@ video {
   display: flex;
 }
 
+.size-4\/12 {
+  width: 33.333333%;
+  height: 33.333333%;
+}
+
+.size-1\/12 {
+  width: 8.333333%;
+  height: 8.333333%;
+}
+
+.size-2\/12 {
+  width: 16.666667%;
+  height: 16.666667%;
+}
+
+.size-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .h-full {
   height: 100%;
 }
 
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
+.h-screen {
+  height: 100vh;
+}
+
+.min-h-full {
+  min-height: 100%;
 }
 
 .w-full {
   width: 100%;
 }
 
-.content-center {
-  align-content: center;
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.min-w-full {
+  min-width: 100%;
 }
 
 .items-center {
@@ -583,54 +617,9 @@ video {
   justify-content: center;
 }
 
-.justify-items-center {
-  justify-items: center;
-}
-
 .bg-gray-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(22 22 22 / var(--tw-bg-opacity));
-}
-
-.bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-
-.bg-gradient-to-t {
-  background-image: linear-gradient(to top, var(--tw-gradient-stops));
-}
-
-.from-orange {
-  --tw-gradient-from: #ff5520 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(255 85 32 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-yellow {
-  --tw-gradient-from: #ffc82c var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(255 200 44 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.to-yellow {
-  --tw-gradient-to: #ffc82c var(--tw-gradient-to-position);
-}
-
-.to-orange {
-  --tw-gradient-to: #ff5520 var(--tw-gradient-to-position);
-}
-
-.bg-clip-text {
-  -webkit-background-clip: text;
-          background-clip: text;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.align-middle {
-  vertical-align: middle;
 }
 
 .text-3xl {
@@ -640,4 +629,11 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+@media not all and (min-width: 640px) {
+  .max-sm\:size-4\/12 {
+    width: 33.333333%;
+    height: 33.333333%;
+  }
 }
