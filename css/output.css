@@ -750,6 +750,10 @@ video {
           user-select: none;
 }
 
+.snap-center {
+  scroll-snap-align: center;
+}
+
 .flex-col {
   flex-direction: column;
 }

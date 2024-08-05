@@ -14,18 +14,17 @@
   <title>C V S</title>
 </head>
 <body class="bg-gray-dark w-full min-h-full">
-  <div data-relative-input="true" id="para_scene">
-    <section data-depth="0.2" id="s1" class="flex flex-col justify-center items-center w-full min-h-screen">
-      <div data-depth="0.5" class="flex flex-1 justify-center items-center select-none">
-        <img src="./static/pictures/CVS_Transparent_Logo.png" class="size-2/12 max-sm:size-4/12"></img>
-      </div>
-      <div class="flex justify-center items-center h-20 min-w-full select-none">
-        <a href="#s2" class="h-full w-20">
-          <img src="./static/pictures/arrow-down-short.svg" class="size-full animate-bounce"></img>
-        </a>
-      </div>
-    </section>
-  </div>
+
+  <section id="s1" class="flex flex-col justify-center items-center w-full min-h-screen snap-center">
+    <div id="para_scene" class="flex flex-1 justify-center items-center select-none">
+      <img data-depth="0.5" src="./static/pictures/CVS_Transparent_Logo.png" class="size-2/12 max-sm:size-4/12"></img>
+    </div>
+    <div class="flex justify-center items-center h-20 min-w-full select-none">
+      <a href="#s2" class="h-full w-20">
+        <img src="./static/pictures/arrow-down-short.svg" class="size-full animate-bounce"></img>
+      </a>
+    </div>
+  </section>
   
   <section id="s2" class="flex flex-col justify-center items-center w-full min-h-screen">
     <div class="mt-20 flex h-20 text-gray-light font-mono text-2xl">
@@ -47,7 +46,8 @@
     </div>
   </section>
 
-  <script src="./node_modules/parallax-js/dist/parallax.min.js">
+  <script src="./node_modules/parallax-js/dist/parallax.min.js"></script>
+  <script>
     var scene = document.getElementById('para_scene');
     var parallaxInstance = new Parallax(scene);
   </script>
