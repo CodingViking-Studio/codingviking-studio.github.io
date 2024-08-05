@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="h-full">
+<html class="h-full scroll-smooth">
 <head>
   <meta http-equiv='cache-control' content='no-cache'> 
   <meta http-equiv='expires' content='0'> 
@@ -13,51 +13,43 @@
   <link href="./css/custom.css" rel="stylesheet">
   <title>C V S</title>
 </head>
-<body class="bg-gray-dark min-w-full min-h-full">
-  <nav class="bg-gray-dark sticky top-0">
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-      <div class="relative flex h-12 items-center justify-center">
-        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-          <!-- Mobile menu button-->
-          <button type="button"
-            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray hover:bg-gray-dark hover:text-gray-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-            aria-controls="mobile-menu" aria-expanded="false">
-            <span class="absolute -inset-0.5"></span>
-            <span class="sr-only">Open main menu</span>
-            <!--
-                Icon when menu is closed.
-    
-                Menu open: "hidden", Menu closed: "block"
-              -->
-            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-              aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-            <!--
-                Icon when menu is open.
-    
-                Menu open: "block", Menu closed: "hidden"
-              -->
-            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-              aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-        <div class="flex items-center justify-center sm:items-stretch sm:justify-start">
-          <div class="hidden sm:ml-6 sm:block">
-            <div class="flex space-x-4">
-              <a href="#"
-                class="px-3 py-2 text-sm font-medium text-gray border-b-2 border-orange hover:bg-gray-light hover:text-gray-dark">Wallpapers</a>
-            </div>
-          </div>
-        </div>
+<body class="bg-gray-dark w-full min-h-full">
+  <div data-relative-input="true" id="para_scene">
+    <section data-depth="0.2" id="s1" class="flex flex-col justify-center items-center w-full min-h-screen">
+      <div data-depth="0.5" class="flex flex-1 justify-center items-center select-none">
+        <img src="./static/pictures/CVS_Transparent_Logo.png" class="size-2/12 max-sm:size-4/12"></img>
       </div>
-  </nav>
-  <section class="flex justify-center items-center w-screen min-h-screen">
-    <div class="flex justify-center">
-      <img src="./static/pictures/CVS_Transparent_Logo.png" class="size-2/12 max-sm:size-4/12"></img>
+      <div class="flex justify-center items-center h-20 min-w-full select-none">
+        <a href="#s2" class="h-full w-20">
+          <img src="./static/pictures/arrow-down-short.svg" class="size-full animate-bounce"></img>
+        </a>
+      </div>
+    </section>
+  </div>
+  
+  <section id="s2" class="flex flex-col justify-center items-center w-full min-h-screen">
+    <div class="mt-20 flex h-20 text-gray-light font-mono text-2xl">
+      <h1>w a l l p a p e r</h1>
+    </div>
+    <div class="p-10 flex flex-col justify-evenly content-evenly flex-1 gap-16 ">
+      <a href="./static/downloads/Wallpaper_UW_green.png">
+        <img src="./static/pictures/Wallpaper_UW_green_Small.jpg" class="h-30 shadow-xl shadow-gray/25 hover:shadow-orange hover:scale-105"></img>
+      </a>
+      <a href="./static/downloads/Wallpaper_UW_V1.png">
+        <img src="./static/pictures/Wallpaper_UW_V1_Small.jpg" class="h-30 shadow-xl shadow-gray/25 hover:shadow-orange hover:scale-105"></img>
+      </a>
+      <a href="./static/downloads/Wallpaper_UW_V2.png">
+        <img src="./static/pictures/Wallpaper_UW_V2_Small.jpg" class="h-30 shadow-xl shadow-gray/25 hover:shadow-orange hover:scale-105"></img>
+      </a>
+      <a href="./static/downloads/Wallpaper_UW_warm.png">
+        <img src="./static/pictures/Wallpaper_UW_warm_Small.jpg" class="h-30 shadow-xl shadow-gray/25 hover:shadow-orange  hover:scale-105"></img>
+      </a>
     </div>
   </section>
+
+  <script src="./node_modules/parallax-js/dist/parallax.min.js">
+    var scene = document.getElementById('para_scene');
+    var parallaxInstance = new Parallax(scene);
+  </script>
 </body>
 </html>
