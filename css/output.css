@@ -679,6 +679,10 @@ video {
   min-height: 100vh;
 }
 
+.min-h-dvh {
+  min-height: 100dvh;
+}
+
 .w-6 {
   width: 1.5rem;
 }
