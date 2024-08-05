@@ -750,6 +750,10 @@ video {
           user-select: none;
 }
 
+.snap-y {
+  scroll-snap-type: y var(--tw-scroll-snap-strictness);
+}
+
 .snap-center {
   scroll-snap-align: center;
 }
