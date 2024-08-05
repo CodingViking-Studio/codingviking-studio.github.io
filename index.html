@@ -50,6 +50,8 @@
   <script>
     var scene = document.getElementById('para_scene');
     var parallaxInstance = new Parallax(scene);
+    parallaxInstance.hoverOnly=true;
+    parallaxInstance.friction(0.2, 0.2);
   </script>
 </body>
 </html>
