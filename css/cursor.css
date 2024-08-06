@@ -26,3 +26,47 @@
   .hover_c {
     width: 50px
   }
+
+  .ina{
+    animation: animation_in .5s ease-out forwards
+  }
+
+  .outa{
+    animation: animation_out .3s ease reverse forwards
+  }
+
+  @keyframes animation_in {
+    0% {
+      width: 15px;
+      background-color: rgba(255,255,255,.1);
+      opacity: 1;
+    }
+    25% {
+      width: 500px;
+      background-color: rgba(255,255,255,.1);
+      opacity: 0;
+    }
+    50% {
+      width: 15px;
+      background-color: rgba(255,255,255,.1);
+      opacity: 0;
+    }
+    100% {
+      width: 5px;
+      background-color: #ff5520;
+      opacity: 1;
+    }
+  }
+
+  @keyframes animation_out {
+    0% {
+      width: 15px;
+      background-color: rgba(255,255,255,.1);
+      opacity: 1;
+    }
+    100% {
+      width: 5px;
+      background-color: #ff5520;
+      opacity: 1;
+    }
+  }

@@ -25,10 +25,12 @@ document.addEventListener('mouseup', function(e){
 
 a_elem.forEach(elem => {
     elem.addEventListener('mouseover', function(x) {
-    cursor.classList.add('hover_c');
+      cursor.classList.remove('outa');
+      cursor.classList.add('ina');
   })
 //To remove the class when it doesn't hover the text
     elem.addEventListener('mouseleave', function (x) {
-    cursor.classList.remove('hover_c');
+      cursor.classList.remove('ina');
+      cursor.classList.add('outa');
   })
 });
