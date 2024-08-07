@@ -5,3 +5,11 @@
 .fade {
     transition: opacity 1s;
 }
+
+.optest {
+    opacity: 0;
+}
+
+.optest:hover {
+    opacity: 1;
+}
