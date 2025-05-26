@@ -1,12 +1,26 @@
+<script setup lang="js">
+  onMounted(() => {
+    const para_scene = document.querySelector('[data-relative-input]')
+    if (para_scene) {
+      const parallaxInstance = new Parallax(para_scene, {
+        hoverOnly: true,
+        frictionX: 0.2,
+        frictionY: 0.2
+      })
+      parallaxInstance.friction(0.2, 0.2)
+    }
+  })
+
+</script>
 <template>
   <div class="z-10 cursor"></div>
   <section id="s1" class="flex flex-col justify-center items-center w-full min-h-screen">
-    <div data-relative-input="true" id="para_scene" class="fade flex flex-1 justify-center items-center select-none opacity-100">
-      <img data-depth="0.5" src="./static/pictures/CVS_Transparent_Logo.png" class="size-2/12 max-sm:size-4/12"></img>
+    <div data-relative-input="true" ref="para_scene" class="fade flex flex-1 justify-center items-center select-none opacity-100">
+      <img data-depth="0.5" src="/static/pictures/CVS_Transparent_Logo.png" class="size-2/12 max-sm:size-4/12"></img>
     </div>
     <div id="scroll_arrow" class="fade flex justify-center items-center h-20 min-w-full select-none opacity-100">
       <a href="#s2" class="h-full w-20">
-        <img src="./static/pictures/arrow-down-short.svg" class="size-full animate-bounce rounded-full transition-colors duration-300 hover:bg-zinc-800"></img>
+        <img src="/static/pictures/arrow-down-short.svg" class="size-full animate-bounce rounded-full transition-colors duration-300 hover:bg-zinc-800"></img>
       </a>
     </div>
   </section>
@@ -16,7 +30,7 @@
       <h1>w a l l p a p e r</h1>
     </div>
     <div class="p-10 flex flex-col justify-evenly content-evenly flex-1 gap-16 relative text-xl max-sm:text-sm text-white">
-      <a href="./static/downloads/Wallpaper_UW_green.png" class="relative shadow-xl shadow-gray-100/25 hover:shadow-cvs-orange hover:scale-105 duration-500">
+      <a href="/static/downloads/Wallpaper_UW_green.png" class="relative shadow-xl shadow-gray-100/25 hover:shadow-cvs-orange hover:scale-105 duration-500">
         <div class="absolute optest h-100 w-100 flex flex-column justify-center items-center hover:backdrop-blur-sm hover:backdrop-filter brightness-75">
           <svg xmlns="http://www.w3.org/2000/svg"
             class="fill-white h-11 w-11 mb-4 max-sm:mb-0 max-sm:h-8 max-sm:w-8"
@@ -26,9 +40,9 @@
           </svg>
           <p>49" Ultra Wide Wallpaper WQHD "Green"</p>
         </div>
-        <img src="./static/pictures/Wallpaper_UW_green_Small.jpg" class="h-30"></img>
+        <img src="/static/pictures/Wallpaper_UW_green_Small.jpg" class="h-30"></img>
       </a>
-      <a href="./static/downloads/Wallpaper_UW_V1.png" class="relative shadow-xl shadow-gray-100/25 hover:shadow-cvs-orange hover:scale-105 duration-500">
+      <a href="/static/downloads/Wallpaper_UW_V1.png" class="relative shadow-xl shadow-gray-100/25 hover:shadow-cvs-orange hover:scale-105 duration-500">
         <div
           class="absolute optest h-100 w-100 flex flex-column justify-center items-center hover:backdrop-blur-sm hover:backdrop-filter brightness-75">
           <svg xmlns="http://www.w3.org/2000/svg" class="fill-white h-11 w-11 mb-4 max-sm:mb-0 max-sm:h-8 max-sm:w-8"
@@ -38,9 +52,9 @@
           </svg>
           <p>49" Ultra Wide Wallpaper WQHD "Standard"</p>
         </div>
-        <img src="./static/pictures/Wallpaper_UW_V1_Small.jpg" class="h-30"></img>
+        <img src="/static/pictures/Wallpaper_UW_V1_Small.jpg" class="h-30"></img>
       </a>
-      <a href="./static/downloads/Wallpaper_UW_V2.png" class="relative shadow-xl shadow-gray-100/25 hover:shadow-cvs-orange hover:scale-105 duration-500">
+      <a href="/static/downloads/Wallpaper_UW_V2.png" class="relative shadow-xl shadow-gray-100/25 hover:shadow-cvs-orange hover:scale-105 duration-500">
         <div
           class="absolute optest h-100 w-100 flex flex-column justify-center items-center hover:backdrop-blur-sm hover:backdrop-filter brightness-75">
           <svg xmlns="http://www.w3.org/2000/svg" class="fill-white h-11 w-11 mb-4 max-sm:mb-0 max-sm:h-8 max-sm:w-8"
@@ -50,9 +64,9 @@
           </svg>
           <p>49" Ultra Wide Wallpaper WQHD "Standard Mirrored"</p>
         </div>
-        <img src="./static/pictures/Wallpaper_UW_V2_Small.jpg" class="h-30"></img>
+        <img src="/static/pictures/Wallpaper_UW_V2_Small.jpg" class="h-30"></img>
       </a>
-      <a href="./static/downloads/Wallpaper_UW_warm.png" class="relative shadow-xl shadow-gray-100/25 hover:shadow-cvs-orange hover:scale-105 duration-500">
+      <a href="/static/downloads/Wallpaper_UW_warm.png" class="relative shadow-xl shadow-gray-100/25 hover:shadow-cvs-orange hover:scale-105 duration-500">
         <div
           class="absolute optest h-100 w-100 flex flex-column justify-center items-center hover:backdrop-blur-sm hover:backdrop-filter brightness-75">
           <svg xmlns="http://www.w3.org/2000/svg" class="fill-white h-11 w-11 mb-4 max-sm:mb-0 max-sm:h-8 max-sm:w-8"
@@ -62,9 +76,9 @@
           </svg>
           <p>49" Ultra Wide Wallpaper WQHD "Warm"</p>
         </div>
-        <img src="./static/pictures/Wallpaper_UW_warm_Small.jpg" class="h-30"></img>
+        <img src="/static/pictures/Wallpaper_UW_warm_Small.jpg" class="h-30"></img>
       </a>
-      <a href="./static/downloads/Wallpaper_Colors_Coffee_dark.jpg"
+      <a href="/static/downloads/Wallpaper_Colors_Coffee_dark.jpg"
         class="relative shadow-xl shadow-gray-100/25 hover:shadow-cvs-orange hover:scale-105 duration-500">
         <div
           class="absolute optest h-100 w-100 flex flex-column justify-center items-center hover:backdrop-blur-sm hover:backdrop-filter brightness-75">
@@ -75,9 +89,9 @@
           </svg>
           <p>49" Ultra Wide Wallpaper WQHD Coffee palette "dark"</p>
         </div>
-        <img src="./static/pictures/Wallpaper_Colors_Coffee_dark_small.jpg" class="h-30"></img>
+        <img src="/static/pictures/Wallpaper_Colors_Coffee_dark_small.jpg" class="h-30"></img>
       </a>
-      <a href="./static/downloads/Wallpaper_Colors_Coffee_light.png"
+      <a href="/static/downloads/Wallpaper_Colors_Coffee_light.png"
         class="relative shadow-xl shadow-gray-100/25 hover:shadow-cvs-orange hover:scale-105 duration-500">
         <div
           class="absolute optest h-100 w-100 flex flex-column justify-center items-center hover:backdrop-blur-sm hover:backdrop-filter brightness-75">
@@ -88,9 +102,9 @@
           </svg>
           <p>49" Ultra Wide Wallpaper WQHD Coffee palette "light"</p>
         </div>
-        <img src="./static/pictures/Wallpaper_Colors_Coffee_light_small.png" class="h-30"></img>
+        <img src="/static/pictures/Wallpaper_Colors_Coffee_light_small.png" class="h-30"></img>
       </a>
-      <a href="./static/downloads/MissionR-1.jpg"
+      <a href="/static/downloads/MissionR-1.jpg"
         class="relative shadow-xl shadow-gray-100/25 hover:shadow-cvs-orange hover:scale-105 duration-500">
         <div
           class="absolute optest h-100 w-100 flex flex-column justify-center items-center hover:backdrop-blur-sm hover:backdrop-filter brightness-75">
@@ -101,9 +115,9 @@
           </svg>
           <p>49" Ultra Wide Wallpaper WQHD Porsche Mission R 1</p>
         </div>
-        <img src="./static/pictures/MissionR-1_small.jpg" class="h-30"></img>
+        <img src="/static/pictures/MissionR-1_small.jpg" class="h-30"></img>
       </a>
-      <a href="./static/downloads/MissionR-2.jpg"
+      <a href="/static/downloads/MissionR-2.jpg"
         class="relative shadow-xl shadow-gray-100/25 hover:shadow-cvs-orange hover:scale-105 duration-500">
         <div
           class="absolute optest h-100 w-100 flex flex-column justify-center items-center hover:backdrop-blur-sm hover:backdrop-filter brightness-75">
@@ -114,9 +128,9 @@
           </svg>
           <p>49" Ultra Wide Wallpaper WQHD Porsche Mission R 2</p>
         </div>
-        <img src="./static/pictures/MissionR-2_small.jpg" class="h-30"></img>
+        <img src="/static/pictures/MissionR-2_small.jpg" class="h-30"></img>
       </a>
-      <a href="./static/downloads/MissionR-3.jpg"
+      <a href="/static/downloads/MissionR-3.jpg"
         class="relative shadow-xl shadow-gray-100/25 hover:shadow-cvs-orange hover:scale-105 duration-500">
         <div
           class="absolute optest h-100 w-100 flex flex-column justify-center items-center hover:backdrop-blur-sm hover:backdrop-filter brightness-75">
@@ -127,17 +141,8 @@
           </svg>
           <p>49" Ultra Wide Wallpaper WQHD Porsche Mission R 3</p>
         </div>
-        <img src="./static/pictures/MissionR-3_small.jpg" class="h-30"></img>
+        <img src="/static/pictures/MissionR-3_small.jpg" class="h-30"></img>
       </a>
     </div>
   </section>
-  <script src="./js/basic.js"></script>
-  <script src="./js/cursor.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-  <script>
-    var scene = document.getElementById('para_scene');
-    var parallaxInstance = new Parallax(scene);
-    parallaxInstance.hoverOnly=true;
-    parallaxInstance.friction(0.2, 0.2);
-  </script>
 </template>
