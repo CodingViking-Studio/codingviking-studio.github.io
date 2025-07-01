@@ -1,10 +1,8 @@
 # https://github.com/actions/deploy-pages#usage
-name: Deploy to GitHub Pages
+name: Deploy NUXT to GitHub Pages
 on:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
+  release:
+    types: [published]
 jobs:
   build:
     runs-on: ubuntu-latest
